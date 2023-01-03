@@ -1,28 +1,21 @@
 import React from 'react'
 import {
   Box,
-  Flex,
   Image,
-  Text,
   Stack,
-  Avatar,
-  Button,
-  Card,
-  CardBody,
-  Fade,
-  Heading,
-  ModalOverlay
 } from '@chakra-ui/react'
 import Protuct1 from "../assets/image-product-1.png"
 import Protuct2 from "../assets/image-product-2.png"
 import Protuct3 from "../assets/image-product-3.png"
 import Protuct4 from "../assets/image-product-4.png"
-import { useState } from 'react'
-function Gallery({image,setİmage,onOpen}) {
+// import { useMediaQuery } from '@chakra-ui/react'
+
+function Gallery({image,setİmage,onOpen,isLargerThan992}) {
+  // const [isLargerThan992] = useMediaQuery('(max-width: 992px)')
   return (
     <Box >
       <Box boxSize='sm'>
-        <Image rounded={"10px"} objectFit='cover' src={image} boxSize={"70%"}  alt='Dan Abramov' onClick={onOpen} />
+        <Image rounded={"10px"} objectFit='cover' src={image} boxSize={isLargerThan992 ? "100%" : "70%"} onClick={onOpen} />
       </Box>
       <Box width={"100%"}>
         <Stack direction='row' alignItems={"center"}>

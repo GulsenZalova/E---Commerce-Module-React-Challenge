@@ -5,31 +5,49 @@ import {
     Container,
     Box,
     Flex,
-    Text,
-    Avatar,
-    Button,
-    Card,
-    CardBody,
-    Fade,
-    Heading,
 } from '@chakra-ui/react'
-function Main({image,setİmage,value,setValue,basket,setBasket,onOpen}) {
+import { useMediaQuery } from '@chakra-ui/react'
+function Main({ image, setİmage, value, setValue, basket, setBasket, onOpen }) {
+    const [isLargerThan992] = useMediaQuery('(max-width: 992px)')
     return (
-        <Container w='100%'
-        h={"80vh"}
-      >
-       <Flex alignItems={"center"} justifyContent={'center'} >
-       <Box w={"70%"}  h={"80vh"} p={"50px"}>
-          <Flex alignItems={"center"} justifyContent={'space-between'}>
-            <Box w={"50%"}>
-            <Gallery image={image} setİmage={setİmage} onOpen={onOpen}/>
-            </Box>
-            <Box w={"50%"}>
-            <ProductInfo value={value} setValue={setValue} basket={basket} setBasket={setBasket} />
-            </Box>
-          </Flex>
-         </Box>
-       </Flex>
+        
+        <Container
+            w='100%'
+        >
+            <Flex
+                alignItems={"center"}
+                justifyContent={'center'} >
+                <Box
+                    w={"70%"}
+                    p={"50px"}>
+                    <Flex
+                        alignItems={"center"}
+                        justifyContent={'space-between'}
+                        flexDirection={isLargerThan992 ? "column" : "row"}
+                        gap={'20px'}
+                        >
+                        <Box 
+                        w={ isLargerThan992 ? "100%" : "50%"}>
+                            <Gallery
+                                image={image}
+                                setİmage={setİmage}
+                                onOpen={onOpen}
+                                isLargerThan992={isLargerThan992}
+                            />
+                        </Box>
+                        <Box 
+                        w={ isLargerThan992 ? "100%" : "50%"}
+                        >
+                            <ProductInfo
+                                value={value}
+                                setValue={setValue}
+                                basket={basket}
+                                setBasket={setBasket}
+                            />
+                        </Box>
+                    </Flex>
+                </Box>
+            </Flex>
         </Container>
 
     )

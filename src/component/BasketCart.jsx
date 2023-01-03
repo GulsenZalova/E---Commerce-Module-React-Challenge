@@ -11,7 +11,6 @@ Fade,
 Heading,
 } from '@chakra-ui/react'
 import { DeleteIcon } from '@chakra-ui/icons'
-import avatar from "../assets/avatar.png"
 function BasketCart({flag,basket,setBasket}) {
     const deleteProduct=()=>{
         setBasket([])
@@ -21,7 +20,8 @@ function BasketCart({flag,basket,setBasket}) {
         {
             flag && (
               <Fade
-                in={flag} >
+                in={flag} 
+                >
                   <Card 
                   position={"absolute"}  
                   top={"100%"} 
