@@ -78,7 +78,8 @@ function ProductInfo({ value, setValue, basket, setBasket }) {
                     <Box
                         bg={"hsl(223, 64%, 98%)"}
                         w={"100px"}
-                        p={"10px"}>
+                        p={"10px"}
+                        >
                         <Flex
                             alignItems={"center"}
                             justifyContent={"space-between"}>
@@ -88,7 +89,8 @@ function ProductInfo({ value, setValue, basket, setBasket }) {
                                 border={"none"}
                                 color={" hsl(26, 100%, 55%)"}
                                 fontWeight={"bold"}
-                                fontSize={"20px"}>
+                                fontSize={"20px"}
+                                >
                                 +
                             </Button>
                             <Box
@@ -102,7 +104,10 @@ function ProductInfo({ value, setValue, basket, setBasket }) {
                                 border={"none"}
                                 color={" hsl(26, 100%, 55%)"}
                                 fontWeight={"bold"}
-                                fontSize={"20px"}>
+                                fontSize={"20px"}
+                                transition={"all .3s "}
+                                _hover={{ color: "hsl(26, 100%, 55%)", bg: "white" ,border:"1px solid hsl(26, 100%, 55%)",cursor:"pointer"}}
+                                >
                                 -
                             </Button>
                         </Flex>
@@ -117,7 +122,8 @@ function ProductInfo({ value, setValue, basket, setBasket }) {
                         borderRadius={"10px"}
                         color={"white"}
                         onClick={() => addBasket("Fall Limited Edition Sneakers")}
-                    >
+                        transition={"all .3s "}
+                        _hover={{ color: "orange", bg: "white" ,border:"1px solid orange",cursor:"pointer"}}>
                         <Image
                             src={image}
                             mx={"15px"}

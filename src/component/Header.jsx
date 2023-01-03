@@ -62,34 +62,34 @@ function Header({ flag, setFlag, basket, setBasket, isLargerThan992 }) {
                                     color={"lightgray"}
                                     borderBottom={" 1px solid transparent"}
                                     transition={"all .3s "}
-                                    _hover={{ color: "gray", borderBottomColor: "orange" }}>
+                                    _hover={{ color: "gray", borderBottomColor: "hsl(26, 100%, 55%)",cursor:"pointer" }}>
                                     Collections
                                 </ListItem>
                                 <ListItem
                                     color={"lightgray"}
                                     borderBottom={" 1px solid transparent"}
-                                    transition={"all .3s "} _hover={{ color: "gray", borderBottomColor: "orange" }}>
+                                    transition={"all .3s "} _hover={{ color: "gray", borderBottomColor: "hsl(26, 100%, 55%)",cursor:"pointer" }}>
                                     Men
                                 </ListItem>
                                 <ListItem
                                     color={"lightgray"}
                                     borderBottom={" 1px solid transparent"}
                                     transition={"all .3s "}
-                                    _hover={{ color: "gray", borderBottomColor: "orange" }}>
+                                    _hover={{ color: "gray", borderBottomColor: "hsl(26, 100%, 55%)",cursor:"pointer"}}>
                                     Women
                                 </ListItem>
                                 <ListItem
                                     color={"lightgray"}
                                     borderBottom={" 1px solid transparent"}
                                     transition={"all .3s "}
-                                    _hover={{ color: "gray", borderBottomColor: "orange" }}>
+                                    _hover={{ color: "gray", borderBottomColor: "hsl(26, 100%, 55%)",cursor:"pointer"}}>
                                     About
                                 </ListItem>
                                 <ListItem
                                     color={"lightgray"}
                                     borderBottom={" 1px solid transparent"}
                                     transition={"all .3s "}
-                                    _hover={{ color: "gray", borderBottomColor: "orange" }}>
+                                    _hover={{ color: "gray", borderBottomColor: "hsl(26, 100%, 55%)",cursor:"pointer" }}>
                                     Contact
                                 </ListItem>
                             </Flex>
@@ -134,34 +134,34 @@ function Header({ flag, setFlag, basket, setBasket, isLargerThan992 }) {
                                                 color={"lightgray"}
                                                 borderBottom={" 1px solid transparent"}
                                                 transition={"all .3s "}
-                                                _hover={{ color: "gray", borderBottomColor: "orange" }}>
+                                                _hover={{ color: "gray", borderBottomColor: "hsl(26, 100%, 55%)" ,cursor:"pointer" }}>
                                                 Collections
                                             </ListItem>
                                             <ListItem
                                                 color={"lightgray"}
                                                 borderBottom={" 1px solid transparent"}
-                                                transition={"all .3s "} _hover={{ color: "gray", borderBottomColor: "orange" }}>
+                                                transition={"all .3s "} _hover={{ color: "gray", borderBottomColor: "hsl(26, 100%, 55%)",cursor:"pointer" }}>
                                                 Men
                                             </ListItem>
                                             <ListItem
                                                 color={"lightgray"}
                                                 borderBottom={" 1px solid transparent"}
                                                 transition={"all .3s "}
-                                                _hover={{ color: "gray", borderBottomColor: "orange" }}>
+                                                _hover={{ color: "gray", borderBottomColor: "hsl(26, 100%, 55%)",cursor:"pointer" }}>
                                                 Women
                                             </ListItem>
                                             <ListItem
                                                 color={"lightgray"}
                                                 borderBottom={" 1px solid transparent"}
                                                 transition={"all .3s "}
-                                                _hover={{ color: "gray", borderBottomColor: "orange" }}>
+                                                _hover={{ color: "gray", borderBottomColor: "hsl(26, 100%, 55%)",cursor:"pointer" }}>
                                                 About
                                             </ListItem>
                                             <ListItem
                                                 color={"lightgray"}
                                                 borderBottom={" 1px solid transparent"}
                                                 transition={"all .3s "}
-                                                _hover={{ color: "gray", borderBottomColor: "orange" }}>
+                                                _hover={{ color: "gray", borderBottomColor: "hsl(26, 100%, 55%)",cursor:"pointer" }}>
                                                 Contact
                                             </ListItem>
                                         </Flex>
@@ -182,6 +182,7 @@ function Header({ flag, setFlag, basket, setBasket, isLargerThan992 }) {
                                     src={image}
                                     alt=""
                                     onClick={setFlag.toggle}
+                                    _hover={{cursor:"pointer"}}
                                 />
                                 <Box
                                     fontSize={"10px"}
@@ -206,6 +207,7 @@ function Header({ flag, setFlag, basket, setBasket, isLargerThan992 }) {
                                         borderColor={'orange'}
                                         name='Dan Abrahmov'
                                         src={avatar}
+                                        _hover={{cursor:"pointer"}}
                                     />
                                 </WrapItem>
                             </Wrap>
